@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(img/png.png);
+    background-size: cover;
+    
+}
+
+.navbar-toggler{
+    outline: none !important;
+    padding: 0 !important;
+}
+.navbar-toggler img{
+    width: 35px;
+}
+.navbar-brand{
+    width: 200px;
+    
+}
+.nav-link{
+    color:#e8491d !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-item.active .nav-link{
+    background: #262626;
+    color: #fff !important;
+    border-radius: 20px;
+}
+.nav-link:hover{
+    background: #262626;
+    color: #fff !important;
+    border-radius: 20px; 
+}
+.navbar-light .navbar-toggler{
+    border: none;
+    color: #fff;
+    border: 2px solid #7f7f7f;
+    border-radius: 0;
+    outline: none;
+}
+
+.wrapper{
+    margin-left: 50px auto;
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 20px 20px 50px 10px rgba(236, 75, 0, 0.18);
+    background-color: rgb(230, 243, 247);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.wrapper h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #e8491d;
+}
+.wrapper .box{
+    margin-top: 10px;
+    position: relative;
+    width: 500px;
+    height: 350px;
+    background: white;
+    margin: 19px;
+    box-sizing: border-box;
+    margin-left: 32px;
+    
+}
+.wrapper .box .imgbox{
+    position: relative;
+    overflow: hidden;
+   
+   
+}
+.wrapper .box .imgbox img{
+    width: 500px;
+    height: 350px;
+    transition: 2s;
+}
+.wrapper .box:hover .imgbox img{
+    transform: scale(1.2);
+}
+
+.wrapper .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, .8);
+    transform: scaleY(0);
+    transition: .5s;
+}
+.wrapper .box:hover .details{
+    transform: scaleY(1);
+}
+.wrapper .box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+
+}
+.wrapper .box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #e8491d;
+}
+.wrapper .box .details .content h2 p{
+    margin: 10px 0 0;
+    padding: 0;
+    
+}
+
+
+
+.col-md-2 .nav-link a{
+    color: #e8491d;
+}
+.col-md-2 .nav-link a:hover{
+    background: #262626;
+    color: white !important; 
+}
